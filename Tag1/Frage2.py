@@ -138,7 +138,66 @@ print(get_rating(13))  # T
 print(get_rating(12))  # C
 print(get_rating(11))  # C
 print(get_rating(None))  # C
+
+#############################          7. Frage
+
+a=1
+b=0
+x=a or b
+y= not(a and b)
+print(x+y)
+
+q=True
+w=False
+e=False
+if q or w and e:
+    print("TRUE")
+else:
+    print("FALSE")
+
+    #########################     8. Frage
+
+
+def fun(x):
+    x += 1
+    return x
+
+
+
+x = 2
+x = fun(x + 1)
+print(x)  #4
+
+Explanation:
+
+First 3 is passed to the function,
+
+1 is added and 4 is returned.
+
+The 4 is assigned to x and then printed.
+
+print(1/1)  #1.0
+#################### 9. Frage
+
+dct = {}
+dct['1'] = (1, 2)
+dct['2'] = (2, 1)  #print(dct)  # {'1': (1, 2), '2': (2, 1)}
+
+for x in dct.keys():
+    print(dct[x][1], end='')  #Ausgabe: 21
+
+  # print(dct['1'][1])  # 2
+#print(dct['2'][1])  # 1
+
+    ########################  10. Frage
+
+x = 1 / 2 + 3 // 3 + 4 ** 2
+
+print(x)  #Ausgabe: 17.5
+
 """
+
+
 
 
 
