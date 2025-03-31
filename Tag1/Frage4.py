@@ -104,3 +104,5 @@ while i <= 5:     # 0 <= 5 ✅
     print("*")    # 👉 yıldız yazdırılır
 
 """
+
+print("sait")
