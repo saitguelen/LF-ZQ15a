@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1940afca-ba5e-4c2d-9c8d-d7c6885c3a98" name="Changes" comment="Dritte Commit">
-      <change afterPath="$PROJECT_DIR$/Tag1/Frage3.py" afterDir="false" />
+    <list default="true" id="1940afca-ba5e-4c2d-9c8d-d7c6885c3a98" name="Changes" comment="Vierte Commit">
+      <change afterPath="$PROJECT_DIR$/Tag1/Frage4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +49,7 @@
     "Python.Frage1.executor": "Run",
     "Python.Frage2.executor": "Run",
     "Python.Frage3.executor": "Run",
+    "Python.Frage4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -109,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743420477864</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Vierte Commit">
+      <option name="closed" value="true" />
+      <created>1743424125044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743424125044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,6 +126,7 @@
     <MESSAGE value="Erste Commit" />
     <MESSAGE value="Zweite Commit" />
     <MESSAGE value="Dritte Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dritte Commit" />
+    <MESSAGE value="Vierte Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vierte Commit" />
   </component>
 </project>
