@@ -122,8 +122,60 @@ y=['Peter', 'Paul', 'Mary']
 
 print(x is y)
 
-
-"""
-
 print([i for i in range(-1, -2)])  #[]
 print([i for i in range(-1, -2,-1)])  #[-1]
+
+
+=============================>8. Frage
+
+
+print(not 0)  #True
+print(not 23) #False
+print(not '') #True
+print(not 'Peter')  #False
+print(not None) #True
+
+#The values 23 and 'Peter' will evaluate to True and the rest will evaluate to False
+
+print(bool(''))        # False
+print(bool(0))         # False
+print(bool(0.0))       # False
+print(bool(0j))        # False
+print(bool(None))      # False
+print(bool([]))        # False
+print(bool(()))        # False
+print(bool({}))        # False
+print(bool(set()))     # False
+print(bool(range(0)))  # False
+
+
+#=============================>  9. Frage
+#How many stars will the following snippet print to the monitor?
+
+
+i = 4
+while i > 0: # i is 4
+    i -= 2   # i is 2
+    print('*') # *
+    if i == 2: #Yip, i is 2
+        break  #Leave the loop directly
+else:           # Does not apply, because the break got triggered
+
+    print('*') #Ausgabe:*
+
+========================================>  10. Frage:
+try:
+    print(5 / 0)
+    break  #SyntaxError: 'break' outside loop
+except:
+    print("Sorry, something went wrong...")
+except (ValueError, ZeroDivisionError):
+    print("Too bad...")
+
+    There    are    two    syntax    errors:
+
+    break    can    not be    used    outside    of    a    loop,
+
+    and the    default except must    be    last.
+
+"""
