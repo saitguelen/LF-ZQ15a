@@ -125,4 +125,5 @@ print(x is y)
 
 """
 
-
+print([i for i in range(-1, -2)])  #[]
+print([i for i in range(-1, -2,-1)])  #[-1]
