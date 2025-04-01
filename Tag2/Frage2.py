@@ -150,3 +150,36 @@ Liste ve fonksiyon aynı isme sahip (my_list) olduğu için liste fonksiyonla ez
 Sonuçta Python, fonksiyonu bir liste sanıp işlem yapmaya çalışınca hata veriyor.
 
 """
+
+#print(float("1,3")) #ValueError: could not convert string to float: '1,3'
+
+
+x = [0, 1, 2]
+x[0], x[2] = x[2], x[0]
+
+print(x)  #[2, 1, 0]
+
+my_list_1 = [1, 2, 3]
+my_list_2 = []
+for v in my_list_1:
+    my_list_2.insert(0, v)
+print(my_list_2)  #[3, 2, 1]
+#=====================================================================================0>
+data=()
+print(data.__len__()) #Ausgabe: 0
+
+print(type(data))  #Ausgabe: <class 'tuple'>
+
+print(len([i for i in range(0,-2)]))
+
+
+nums=[1,2,3]
+data=('peter',)*(len(nums)-nums[::-1][0])
+print(data)  #Ausgabe_: ()
+
+x=16
+
+while x>0:
+    print('*', end=" ")
+    x //=2
+
