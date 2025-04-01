@@ -108,5 +108,21 @@ print(True * True)  # 1
 print(True / True)  # 1.0
 print(True % True)  # 0
 
+
+=============================>7. Frage
+
+
+
+
+print('t' in 'Peter')
+print('is' in 'This IS Python Code')
+
+x=['Peter', 'Paul', 'Mary']
+y=['Peter', 'Paul', 'Mary']
+
+print(x is y)
+
+
 """
+
 
