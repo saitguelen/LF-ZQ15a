@@ -1,0 +1,152 @@
+
+"""
+
+=======================>  1. Frage:
+
+
+#What is the expected output of the following code?
+v = 1
+
+
+def fun():
+    global v
+    v = 2
+    return v
+
+
+print(v)
+
+
+=======================>  2. Frage:
+What is the expected output of the following code?
+
+
+
+
+
+def func1(x):
+    return str(x) #1
+
+
+def func2(x):
+    # x=str(x)   #eger bu satiri eklersek x sayi iken string olur ve alacagimiz sonuc 14 yerine 122 olur!!!
+    return str(2 * x)  #4
+
+
+
+print(func1(1) + func2(2)) #1+4==>14 x string döndügü icin
+
+=======================>  3. Frage:
+
+x = """
+from traceback import print_tb
+from xml.dom.expatbuilder import FragmentBuilder
+
+"""
+print(len(x))
+
+Tryityourself:
+
+x = """
+"""
+print(len(x))  # 1
+
+# ord() returns an integer representing the Unicode character.
+print(ord(x[0]))  # 10 (LF: line feed, new line)
+
+# Same result with single quotes:
+y = '''
+'''
+print(len(y))  # 1
+
+# Every line feed is a character:
+z = """
+
+"""
+print(len(z))  # 2
+Explanation:
+
+In a multiline string the line feed gets saved like any other character.
+=======================> 4. Frage:
+
+data= ((1, 2),) * 7
+print(len(data[3:8])) #4
+print(data) #((1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2), (1, 2))
+print(len(data[3:10])) #4
+
+
+Try it yourself:
+
+# for = 7  # SyntaxError: invalid syntax
+# def for(): pass  # SyntaxError: invalid syntax
+ 
+import keyword
+print(keyword.kwlist)
+"""
+['False', 'None', 'True', 'and', 'as', 'assert', 'async',
+'await', 'break', 'class', 'continue', 'def', 'del', 'elif',
+'else', 'except', 'finally', 'for','from', 'global', 'if',
+'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or',
+'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+"""
+
+"""
+#import keyword
+#print(keyword.kwlist)
+
+#data = eval(input('Input: '))
+#print('Output:', data)
+
+"""
+Genel açıklama
+Topics: input() eval() list comprehension
+
+Try it yourself:
+
+# data = eval(input('Input: '))
+data = eval('[x**2 for x in range(1, 4)]')
+print('Input: [x**2 for x in range(1, 4)]')
+print('Output:', data)  # Output: [1, 4, 9]
+print('----------')
+ 
+# If there is a string in the input,
+# it would need quotation marks:
+ 
+# data = eval(input('Input: '))
+# data = eval('Hello Python')  # SyntaxError: ...
+ 
+# data = eval(input('Input: '))
+data = eval('"Hello Python"')
+print('Input: "Hello Python"')
+print('Output:', data)  # Hello Python
+Explanation:
+
+This question is about the eval() function.
+
+It will evaluate the given code inside of the passed string
+
+Remember input() always returns a string
+
+That works with a number and even the list comprehension.
+
+But to make it work with a string you need to put extra quotation marks around it.
+
+===============================>  5. Frage
+
+my_list = ['Mary', 'had', 'a', 'little', 'lamb']
+
+
+def my_list(my_list):  🚫 Ama burada aynı isimle (my_list) bir fonksiyon tanımlanıyor!
+                           Bu, listenin üzerine yazıyor, yani artık my_list bir fonksiyon oluyor, liste değil.
+    del my_list[3]   #TypeError: 'function' object does not support item deletion  Yani: Bir fonksiyonun indekslerini silemezsin.
+    my_list[3] = 'ram' # TypeError: 'function' object does not support item assignment Yani: Bir fonksiyonun 3. indeksine değer atayamazsın, çünkü fonksiyonlarda indeksleme yok.
+
+
+print(my_list(my_list))
+
+❗️Özet:
+Liste ve fonksiyon aynı isme sahip (my_list) olduğu için liste fonksiyonla ezildi.
+
+Sonuçta Python, fonksiyonu bir liste sanıp işlem yapmaya çalışınca hata veriyor.
+
+"""

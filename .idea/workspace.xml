@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1940afca-ba5e-4c2d-9c8d-d7c6885c3a98" name="Changes" comment="Fünfte Committ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tag2/Frage1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tag2/Frage1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tag2/Frage2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tag2/Frage2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/saitguelen/LF-ZQ15a.git&quot;,
     &quot;accountId&quot;: &quot;93f8b578-d689-4764-92f6-b6c2291cd31a&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;saitguelen&quot;,
+    &quot;repository&quot;: &quot;LF-ZQ15a&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -49,14 +59,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Frage1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on sait"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Frage1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Frage2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#3 on sait&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743498115956</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fünfte Committ">
+      <option name="closed" value="true" />
+      <created>1743499977725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743499977725</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fünfte Committ">
+      <option name="closed" value="true" />
+      <created>1743501690521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743501690521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
