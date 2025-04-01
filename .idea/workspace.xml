@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1940afca-ba5e-4c2d-9c8d-d7c6885c3a98" name="Changes" comment="Erste Commit">
-      <change afterPath="$PROJECT_DIR$/Tag1/Frage2.py" afterDir="false" />
+    <list default="true" id="1940afca-ba5e-4c2d-9c8d-d7c6885c3a98" name="Changes" comment="Fünfte Committ">
+      <change afterPath="$PROJECT_DIR$/Tag2/Frage1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tag1/Frage1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tag1/Frage1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "saitguelen"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/saitguelen/LF-ZQ15a.git",
+    "accountId": "93f8b578-d689-4764-92f6-b6c2291cd31a"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2v4Wr48DdsC3MVrJJNcIyDqxdtD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,7 +48,8 @@
   "keyToString": {
     "Python.Frage1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "sait"
   }
 }]]></component>
   <component name="SharedIndexes">
