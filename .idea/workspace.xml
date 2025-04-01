@@ -140,6 +140,7 @@
     <MESSAGE value="Fünfte Committ" />
     <option name="LAST_COMMIT_MESSAGE" value="Fünfte Committ" />
   </component>
+
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -152,3 +153,6 @@
     </breakpoint-manager>
   </component>
 </project>
+=======
+</project>
+
