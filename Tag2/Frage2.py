@@ -281,5 +281,122 @@ print('The average star rating for the new coffee is: '
 
 ##################################################################################################################
 
+
+data = (1, 2, 4, 8)
+data = data[1:-1]
+print(data)  # Ausgabe: (2,4)
+data = data[0]
+print(data) #Ausgabe: 2
+
+##################################################################################################################
+
+Try it yourself:
+
+# A function that prints integers from 1 to 100:
+def f1():
+    for i in range(1, 101):
+        print(i)
+ 
+ 
+print(f1())  # None
+# Not to return a value means to return "None"
+ 
+ 
+# A function that returns a random integer from 1 to 100:
+def f2():
+    from random import randint
+    return randint(1, 100)
+ 
+ 
+print(f2())  # e.g. 87
+# It returns the random number.
+ 
+ 
+# A function that converts an uppercase letter to lowercase:
+def f3(s):
+    return s.lower()
+ 
+ 
+print(f3('X'))  # x
+# This function would return the lower letter
+
+
+Explanation:
+
+The function f1() does not have the return keyword.
+
+Therefore it would return None
+
+Every function, that does not return anything, returns None
+
+
+
+Q311 (Please refer to this number, if you want to write me about this question.)
+
+##################################################################################################################
+x = [0, 1, 2]
+x.insert(0, 1)  #sifirinci indekse 1 sayisini ekle
+#print(x)  #[1, 0, 1, 2]
+del x[1]         #birinci indeksten sil
+#print(x)  #[1, 1, 2]
+print(sum(x))  #Ausgabe: 4
+##################################################################################################################
+
+counter = 84 // 2
+if counter < 0:
+    print("*")
+elif counter >= 42:
+    print("**")
+else:
+    print("***")       ###Ausgabe: **
+
+##################################################################################################################
+
+
+print(1//2*3)  #Ausgabe: 0
+##################################################################################################################
+
+def func(data):
+    data = [7, 23, 42]
+    print('Function scope: ', data)  #Function scope:  [7, 23, 42]
+
+
+data = ['Peter', 'Paul', 'Mary']
+func(data)
+print('Outer scope: ', data)   #Outer scope:  ['Peter', 'Paul', 'Mary']
+
+##################################################################################################################
+
+res = str(bool(1) + float(12) / float(2))
+print(res)  #Ausgabe: 7.0
+
+##################################################################################################################
+
 """
 
+box = {}
+jars = {}
+crates = {}
+
+box['biscuit'] = 1
+box['cake'] = 3
+
+jars['jam'] = 4
+
+crates['box'] = box
+crates['jars'] = jars
+
+#print(len(crates[box])
+#print(len(crates[box]))  # TypeError: unhashable type: 'dict'
+
+print(len(crates['box']))  # 2
+print(crates['box'])       # {'biscuit': 1, 'cake': 3}
+print(crates)
+# {'box': {'biscuit': 1, 'cake': 3}, 'jars': {'jam': 4}}
+
+print('mike'>'Mike')
+print(ord('m'))         # 109
+print(ord('M'))         # 77
+print(ord('a'))         # 97
+print(ord('A'))         # 65
+print(ord('Z'))          # 90
