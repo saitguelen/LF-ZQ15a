@@ -149,22 +149,27 @@ Liste ve fonksiyon aynı isme sahip (my_list) olduğu için liste fonksiyonla ez
 
 Sonuçta Python, fonksiyonu bir liste sanıp işlem yapmaya çalışınca hata veriyor.
 
-"""
+#################################################################################
 
 #print(float("1,3")) #ValueError: could not convert string to float: '1,3'
 
+#######################################################################################################################
 
 x = [0, 1, 2]
 x[0], x[2] = x[2], x[0]
 
 print(x)  #[2, 1, 0]
 
+#####################################################################################################
+
 my_list_1 = [1, 2, 3]
 my_list_2 = []
 for v in my_list_1:
     my_list_2.insert(0, v)
 print(my_list_2)  #[3, 2, 1]
+
 #=====================================================================================0>
+
 data=()
 print(data.__len__()) #Ausgabe: 0
 
@@ -172,14 +177,109 @@ print(type(data))  #Ausgabe: <class 'tuple'>
 
 print(len([i for i in range(0,-2)]))
 
+#####################################################################
 
 nums=[1,2,3]
 data=('peter',)*(len(nums)-nums[::-1][0])
 print(data)  #Ausgabe_: ()
+
+
+#####################################################################
 
 x=16
 
 while x>0:
     print('*', end=" ")
     x //=2
+
+#####################################################################
+
+x = float(input())     # kullanıcı 2 giriyor → x = 2.0
+y = float(input())     # kullanıcı 4 giriyor → y = 4.0
+
+print(y ** (1 / x))    # 4.0 ** (1 / 2.0) → 4.0 ** 0.5 = √4 = 2.0
+
+#####################################################################
+
+def test(x, y=23, z=10):
+    print('x is', x, 'and y is', y, 'and z is', z)
+
+
+test(3, 7)
+test(42, z=24)
+test(z=60, x=100)
+
+#####################################################################
+
+#{'A': 1, 'B': 2, 'C': 3}
+
+
+
+
+t = (('A', 1), ('B', 2), ('C', 3))
+# insert code here
+d=dict(t)
+print(d)   # Ausgabe: {'A': 1, 'B': 2, 'C': 3}
+
+##################################################################################################################
+
+
+
+def fun(n):
+    x = []
+    for i in range(n):
+        x.append(i)
+    return x
+
+
+print(fun(4)) #Ausgabe: [0, 1, 2, 3]
+
+##################################################################################################################
+
+#Expected output:
+
+# [1, 2, 4, 7]
+
+
+list = [2, 7, 1, 4]
+
+# enter code here
+list.sort()
+print(list)  #Ausgabe: [1, 2, 4, 7]
+
+##################################################################################################################
+
+sum = count = done = 0
+average = 0.0
+
+while done != -1:
+    rating =int(input()) # XXX           # ⬅️ Kullanıcıdan giriş alınacak
+    if rating == -1:
+        break
+    sum += rating
+    count += 1
+
+average = float(sum / count)
+
+print("Average rating:", round(average, 2)) #YYY + ZZZ                  # ⬅️ Sonuç yazdırılacak
+##################################################################################################################
+
+sum = count = done = 0
+average = 0.0
+while done != -1:
+    rating = float(input('Enter next rating (1-5), -1 for done'))
+    if rating == -1:
+        break
+    sum += rating
+    count += 1
+
+average = float(sum / count)
+print('The average star rating for the new coffee is: '
+      + format(average, '.2f'))
+
+# format(average, '.2d') -> ValueError: ...
+
+##################################################################################################################
+
+"""
 
