@@ -149,4 +149,254 @@ Liste ve fonksiyon aynı isme sahip (my_list) olduğu için liste fonksiyonla ez
 
 Sonuçta Python, fonksiyonu bir liste sanıp işlem yapmaya çalışınca hata veriyor.
 
+#################################################################################
+
+#print(float("1,3")) #ValueError: could not convert string to float: '1,3'
+
+#######################################################################################################################
+
+x = [0, 1, 2]
+x[0], x[2] = x[2], x[0]
+
+print(x)  #[2, 1, 0]
+
+#####################################################################################################
+
+my_list_1 = [1, 2, 3]
+my_list_2 = []
+for v in my_list_1:
+    my_list_2.insert(0, v)
+print(my_list_2)  #[3, 2, 1]
+
+#=====================================================================================0>
+
+data=()
+print(data.__len__()) #Ausgabe: 0
+
+print(type(data))  #Ausgabe: <class 'tuple'>
+
+print(len([i for i in range(0,-2)]))
+
+#####################################################################
+
+nums=[1,2,3]
+data=('peter',)*(len(nums)-nums[::-1][0])
+print(data)  #Ausgabe_: ()
+
+
+#####################################################################
+
+x=16
+
+while x>0:
+    print('*', end=" ")
+    x //=2
+
+#####################################################################
+
+x = float(input())     # kullanıcı 2 giriyor → x = 2.0
+y = float(input())     # kullanıcı 4 giriyor → y = 4.0
+
+print(y ** (1 / x))    # 4.0 ** (1 / 2.0) → 4.0 ** 0.5 = √4 = 2.0
+
+#####################################################################
+
+def test(x, y=23, z=10):
+    print('x is', x, 'and y is', y, 'and z is', z)
+
+
+test(3, 7)
+test(42, z=24)
+test(z=60, x=100)
+
+#####################################################################
+
+#{'A': 1, 'B': 2, 'C': 3}
+
+
+
+
+t = (('A', 1), ('B', 2), ('C', 3))
+# insert code here
+d=dict(t)
+print(d)   # Ausgabe: {'A': 1, 'B': 2, 'C': 3}
+
+##################################################################################################################
+
+
+
+def fun(n):
+    x = []
+    for i in range(n):
+        x.append(i)
+    return x
+
+
+print(fun(4)) #Ausgabe: [0, 1, 2, 3]
+
+##################################################################################################################
+
+#Expected output:
+
+# [1, 2, 4, 7]
+
+
+list = [2, 7, 1, 4]
+
+# enter code here
+list.sort()
+print(list)  #Ausgabe: [1, 2, 4, 7]
+
+##################################################################################################################
+
+sum = count = done = 0
+average = 0.0
+
+while done != -1:
+    rating =int(input()) # XXX           # ⬅️ Kullanıcıdan giriş alınacak
+    if rating == -1:
+        break
+    sum += rating
+    count += 1
+
+average = float(sum / count)
+
+print("Average rating:", round(average, 2)) #YYY + ZZZ                  # ⬅️ Sonuç yazdırılacak
+##################################################################################################################
+
+sum = count = done = 0
+average = 0.0
+while done != -1:
+    rating = float(input('Enter next rating (1-5), -1 for done'))
+    if rating == -1:
+        break
+    sum += rating
+    count += 1
+
+average = float(sum / count)
+print('The average star rating for the new coffee is: '
+      + format(average, '.2f'))
+
+# format(average, '.2d') -> ValueError: ...
+
+##################################################################################################################
+
+
+data = (1, 2, 4, 8)
+data = data[1:-1]
+print(data)  # Ausgabe: (2,4)
+data = data[0]
+print(data) #Ausgabe: 2
+
+##################################################################################################################
+
+Try it yourself:
+
+# A function that prints integers from 1 to 100:
+def f1():
+    for i in range(1, 101):
+        print(i)
+ 
+ 
+print(f1())  # None
+# Not to return a value means to return "None"
+ 
+ 
+# A function that returns a random integer from 1 to 100:
+def f2():
+    from random import randint
+    return randint(1, 100)
+ 
+ 
+print(f2())  # e.g. 87
+# It returns the random number.
+ 
+ 
+# A function that converts an uppercase letter to lowercase:
+def f3(s):
+    return s.lower()
+ 
+ 
+print(f3('X'))  # x
+# This function would return the lower letter
+
+
+Explanation:
+
+The function f1() does not have the return keyword.
+
+Therefore it would return None
+
+Every function, that does not return anything, returns None
+
+
+
+Q311 (Please refer to this number, if you want to write me about this question.)
+
+##################################################################################################################
+x = [0, 1, 2]
+x.insert(0, 1)  #sifirinci indekse 1 sayisini ekle
+#print(x)  #[1, 0, 1, 2]
+del x[1]         #birinci indeksten sil
+#print(x)  #[1, 1, 2]
+print(sum(x))  #Ausgabe: 4
+##################################################################################################################
+
+counter = 84 // 2
+if counter < 0:
+    print("*")
+elif counter >= 42:
+    print("**")
+else:
+    print("***")       ###Ausgabe: **
+
+##################################################################################################################
+
+
+print(1//2*3)  #Ausgabe: 0
+##################################################################################################################
+
+def func(data):
+    data = [7, 23, 42]
+    print('Function scope: ', data)  #Function scope:  [7, 23, 42]
+
+
+data = ['Peter', 'Paul', 'Mary']
+func(data)
+print('Outer scope: ', data)   #Outer scope:  ['Peter', 'Paul', 'Mary']
+
+##################################################################################################################
+
+res = str(bool(1) + float(12) / float(2))
+print(res)  #Ausgabe: 7.0
+
+##################################################################################################################
+
 """
+
+box = {}
+jars = {}
+crates = {}
+
+box['biscuit'] = 1
+box['cake'] = 3
+
+jars['jam'] = 4
+
+crates['box'] = box
+crates['jars'] = jars
+
+#print(len(crates[box])
+#print(len(crates[box]))  # TypeError: unhashable type: 'dict'
+
+print(len(crates['box']))  # 2
+print(crates['box'])       # {'biscuit': 1, 'cake': 3}
+print(crates)
+# {'box': {'biscuit': 1, 'cake': 3}, 'jars': {'jam': 4}}
+
+print('mike'>'Mike')
+print(ord('m'))         # 109
+print(ord('M'))         # 77
+print(ord('a'))         # 97
+print(ord('A'))         # 65
+print(ord('Z'))          # 90
