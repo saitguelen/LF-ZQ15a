@@ -319,5 +319,62 @@ print(vals)
 
 ===================================================================>
 
+
+
+my_list=[1,2,3,4]
+print(my_list[-3:-2]) #[2]
+
+
+===================================================================>
+
+
+my_list1=[1,2,3]
+my_list2=[]
+for v in range(len(my_list1)):
+    my_list1.insert(1,my_list1[v])
+    print(my_list1)   #Ausgabe: [1, 1, 1, 1, 2, 3]
+
+
+===================================================================>
+
+
+vals=[0,1,2]
+vals.insert(0,1)
+print(vals)  #Ausgabe: [1, 0, 1, 2]
+del vals[1]
+print(vals)  #Ausgabe: [1, 1, 2]
+
+===================================================================>
+
+
+data = [[x for x in range(y)] for y in range(3)]
+print(data)  #Ausgabe: [[], [0], [0, 1]]
+for d in data:
+    if len(d) < 2:
+        print('*', end=", ")  #*, *,
+
+===================================================================>
+
 """
 
+data = [1, {}, (2,), (), {3}, [4, 5]]
+points = 0
+print(len(data))
+for i in range(len(data)):
+    if type(data[i]) == list:
+        points += 1
+        print("erste",points)  #erste 11121
+    elif type(data[i]) == tuple:
+        points += 10
+        print("Zweite",points) #Zweite 11010 Zweite 11020
+    elif type(data[i]) == set:
+        points += 100
+        print("Dritte", points) #Dritte 11120
+    elif type(data[i]) == dict:
+        points += 1000
+        print("vierte",points)  #vierte 11000
+    else:
+        points += 10000
+        print("Fünfte,", points)  #Fünfte, 10000
+
+print(points)
